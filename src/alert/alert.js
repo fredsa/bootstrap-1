@@ -8,7 +8,7 @@ angular.module("ui.bootstrap.alert", []).directive('alert', function () {
       close:'&'
     },
     link:function (scope, element, attrs) {
-      scope.type = scope.type || 'info';
+      scope.type = scope.type || 'default';
       scope.dismiss = function () {
         scope.close();
       };
